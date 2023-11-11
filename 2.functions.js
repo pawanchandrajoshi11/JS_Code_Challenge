@@ -140,7 +140,7 @@ var randomNumber = (function () {
   return Math.floor(Math.random() * 100);
 })();
 
-//Write a function to return multiple values from a function
+// 12. Write a function to return multiple values from a function
 // In general functions are designed to return a single value.
 // Generators are a special type of functions which return an iterator which in turn can be used to send & receive values.
 
@@ -151,3 +151,26 @@ function multipleValueReturn() {
 }
 
 const [x, y] = multipleValueReturn();
+
+
+// 13. Write a function which can set default values to the parameters of function when an argument is not passed. Also show how to use exisiting parameters to set the value of another parameter
+// Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed
+function defaultValueFunc(
+  num = 10,
+  num2 = 20,
+  bool = false,
+  sum = num + num2,
+  string = "Hello"
+) {
+  console.log(num, string, bool, sum);
+}
+ 
+// driver code
+defaultValueFunc(); //  10, 'Hello', false, 30
+defaultValueFunc(4, 8); //  4, 'Hello', false, 12
+defaultValueFunc(10, 4, true); //  10, 'Hello', true, 14
+defaultValueFunc(5, 6, false, 11); //  5, 'Hello', false, 11
+defaultValueFunc(undefined, undefined, false); //  10, 'Hello', false, 30
+
+// Notes: The default values are set only for missing or undefined. null and other falsy values are considered as valid arguments and default will not be set
+
