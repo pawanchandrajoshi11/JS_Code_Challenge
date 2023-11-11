@@ -1,8 +1,10 @@
 # JS_Code_Challenge
 
 ## Concepts -
-### Primitives
-### Functions
-### Objects
-### Collections
-### Asynchronous
+<ol>
+<li>Primitives</li>
+<li>Functions</li>
+<li>Objects</li>
+<li>Collections</li>
+<li>Asynchronous</li>
+</ol>
